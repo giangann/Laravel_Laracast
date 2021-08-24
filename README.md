@@ -1,3 +1,19 @@
+I had knowleadge with MVC pattern, I can make a basic CRUD feature with a given database (from Laravel)
+Purpose of this project is call Api, expand knowleadge with basic like: view, route... Also discover some advance topic like blade, search ,filter...
+Let try it out
+
+Start with Section 2, episode 7: Make a Route and Link to it
+    Try to build a blog
+    A problem apper: 
+        Html:resources\views\post.blade.php (link: /app.css)
+        Css: resources\css\app.css (html can't use this file)
+        Css: public\app.css (can use this)
+        <!-- small NOTE: <margin: auto> this propertise make a block line center with wrapped block outside -->
+    Để ý dòng 13 của flie public\app.css, cách chọn element để xuất hiện cái dòng kẻ nó khá là hay: article + article (chọn tất cả trừ element đầu tiên)
+
+Episode 8:
+    They proposal an file structure for a blog web (or smt like this) so that not only contributor but also author can easy to modify and update.
+    <!-- NOTE: chiều của dấu "/" rất quan trọng, nếu dùng trong những hàm của class Route, hoặc bên phần Model, Controller tương tác với nhau, thì là dấu này: "/". Nếu dùng để include file thì dùng "\" -->
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
