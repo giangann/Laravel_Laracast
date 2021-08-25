@@ -11,7 +11,7 @@
 
 <body>
     <article>
-        <h1><a href="/post">My first posts</a></h1>
+        <h1><a href="/posts/my-first-post">My first posts</a></h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
@@ -22,7 +22,7 @@
         </p>
     </article>
     <article>
-        <h1><a href="/post"> My Second posts</a></h1>
+        <h1><a href="/posts/my-second-post"> My Second posts</a></h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
@@ -33,7 +33,7 @@
         </p>
     </article>
     <article>
-        <h1><a href="/post">My Third posts</a></h1>
+        <h1><a href="/posts/my-third-post">My Third posts</a></h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
@@ -44,7 +44,7 @@
         </p>
     </article>
     <article>
-        <h1><a href="/post">My Fourth posts</a></h1>
+        <h1><a href="/posts/my-third-post">My Fourth posts</a></h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor

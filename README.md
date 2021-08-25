@@ -11,9 +11,19 @@ Start with Section 2, episode 7: Make a Route and Link to it
         <!-- small NOTE: <margin: auto> this propertise make a block line center with wrapped block outside -->
     Để ý dòng 13 của flie public\app.css, cách chọn element để xuất hiện cái dòng kẻ nó khá là hay: article + article (chọn tất cả trừ element đầu tiên)
 
-Episode 8:
+Episode 8: Store Blog Posts as HTML file
+    <strong> DESCRIPTTIONS: </strong>
     They proposal an file structure for a blog web (or smt like this) so that not only contributor but also author can easy to modify and update.
     <!-- NOTE: chiều của dấu "/" rất quan trọng, nếu dùng trong những hàm của class Route, hoặc bên phần Model, Controller tương tác với nhau, thì là dấu này: "/". Nếu dùng để include file thì dùng "\" -->
+    <strong>BUG: </strong>
+    Double quote in file path name! (if use single quote instead -> error: can't find such file and directory)
+    Have to write like this <?= $post> , not like this: <? = $post> (don't use harmful space)
+
+Episode 9: Route Wildcard Constraints (not so important!)
+    Mainly about Regular Expression (regex) for name of route's tail 
+    If this name is not avaiable (dev make conditional), it can catch err for 2 choices, one is 404 not found, other is can't find file or directory.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
