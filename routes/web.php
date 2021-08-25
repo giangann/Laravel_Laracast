@@ -16,11 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('posts');
 });
-Route::get('posts/{smt}', function ($slug) {
-    $path = __DIR__ . "/../resources/posts/{$slug}.html";
-    if (!file_exists($path))
-        ddd($path);
-    $post = file_get_contents($path);
+Route::get('posts/{smt}', function ($smt) {
+   if (!file_exists($path = __DIR__ . "/../resources/posts/{$smt}.html"))
+        return redirect('/');
+
+    $post = cache()->remember("post.{$smt}",10, fn()=> file_get_contents($path));
 
     return view('post',[
         'post' => $post

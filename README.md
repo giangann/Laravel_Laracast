@@ -23,7 +23,13 @@ Episode 9: Route Wildcard Constraints (not so important!)
     Mainly about Regular Expression (regex) for name of route's tail 
     If this name is not avaiable (dev make conditional), it can catch err for 2 choices, one is 404 not found, other is can't find file or directory.
 
+Epsisode 10: use Caching for Expensive Operations
+    Implement Cache tool for speed up perfomance of web (don't have to use file_get_contents method too many times)
+    Method cache()->memory have 3 argument, the second arg in this situation mean if between 2 times user request, if this time > 5s, content still stay in memory, don't have to call 'file_get_content' and acess to file system too many time (lost of time and thread)
+    Its mean each 5s, we access (use 'file_get_contents') 1 time to put the content to cache. From cache, tons of request can be process smoothy and don't effect to file system or overload
 
+Episode 11: use File System Class to Read a Directory:
+    
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
