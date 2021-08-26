@@ -29,7 +29,8 @@ Epsisode 10: use Caching for Expensive Operations
     Its mean each 5s, we access (use 'file_get_contents') 1 time to put the content to cache. From cache, tons of request can be process smoothy and don't effect to file system or overload
 
 Episode 11: use File System Class to Read a Directory:
-    
+    1. Make code Declarative:
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

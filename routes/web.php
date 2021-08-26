@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return Post::find('my-first-post');
     return view('posts');
 });
-Route::get('posts/{smt}', function ($smt) {
-   if (!file_exists($path = __DIR__ . "/../resources/posts/{$smt}.html"))
-        return redirect('/');
 
-    $post = cache()->remember("post.{$smt}",10, fn()=> file_get_contents($path));
-
-    return view('post',[
-        'post' => $post
+Route::get('posts/{slug}', function ($slug) {
+    //find post with slug and pass it intos posts view (through $post enviroment)
+    var_dump($slug);
+    return view([
+        'post' => Post::find($slug)
     ]);
 })
-->where('smt','[A-z_-]+')
-;
+    ->where('slug', '[A-z_-]+');
+
