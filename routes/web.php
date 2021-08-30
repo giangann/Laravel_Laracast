@@ -15,16 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('posts');
+    $temp = Post::all();
+    arsort($temp);
+
+    ddd($temp); 
+    
+    // ddd($temp[0]);
+    return view('posts',[
+        'posts' => $temp //assign an index array for variable $posts
+    ]);
 });
 
-Route::get('posts/{post}', function ($slug) {
-    //find post with slug and pass it intos posts view (through $post variable)
-    $post = Post::find($slug);
+Route::get('/posts/{post}', function($slug){
     return view('post',[
-        'post' => $post
+        'post' => Post::find($slug)
     ]);
-
-})
-    ->where('post', '[A-z_-]+');
-
+});
